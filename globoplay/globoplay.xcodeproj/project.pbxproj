@@ -1,0 +1,806 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C027E46F2CF3E6C8007C8481 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C027E46E2CF3E6C8007C8481 /* ImageDownloader.swift */; };
+		C027E4742CF41453007C8481 /* DetailsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C027E4722CF41453007C8481 /* DetailsKeys.swift */; };
+		C027E4772CF41794007C8481 /* HomeKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C027E4762CF41794007C8481 /* HomeKeys.swift */; };
+		C027E47A2CF44D36007C8481 /* PlayerVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C027E4792CF44D36007C8481 /* PlayerVideo.swift */; };
+		C027E47C2CF4C85A007C8481 /* MyListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C027E47B2CF4C85A007C8481 /* MyListCell.swift */; };
+		C0A8BF2E2CEA760000D29367 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A8BF2D2CEA760000D29367 /* AppDelegate.swift */; };
+		C0A8BF302CEA760000D29367 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A8BF2F2CEA760000D29367 /* SceneDelegate.swift */; };
+		C0A8BF322CEA760000D29367 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A8BF312CEA760000D29367 /* TabBarController.swift */; };
+		C0A8BF352CEA760000D29367 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A8BF332CEA760000D29367 /* Main.storyboard */; };
+		C0A8BF372CEA760200D29367 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0A8BF362CEA760200D29367 /* Assets.xcassets */; };
+		C0A8BF3A2CEA760200D29367 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A8BF382CEA760200D29367 /* LaunchScreen.storyboard */; };
+		C0A8BF452CEA760300D29367 /* globoplayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A8BF442CEA760300D29367 /* globoplayTests.swift */; };
+		C0A8BF4F2CEA760300D29367 /* globoplayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A8BF4E2CEA760300D29367 /* globoplayUITests.swift */; };
+		C0A8BF512CEA760300D29367 /* globoplayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A8BF502CEA760300D29367 /* globoplayUITestsLaunchTests.swift */; };
+		C0A8BF652CEA7F1E00D29367 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A8BF5F2CEA7F1E00D29367 /* HomePresenter.swift */; };
+		C0A8BF672CEA7F1E00D29367 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A8BF612CEA7F1E00D29367 /* HomeRouter.swift */; };
+		C0A8BF682CEA7F1E00D29367 /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A8BF622CEA7F1E00D29367 /* HomeModels.swift */; };
+		C0A8BF692CEA7F1E00D29367 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A8BF632CEA7F1E00D29367 /* HomeViewController.swift */; };
+		C0A8BF6A2CEA7F1E00D29367 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A8BF642CEA7F1E00D29367 /* HomeInteractor.swift */; };
+		C0A8BF712CEA7F5A00D29367 /* DetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A8BF6B2CEA7F5A00D29367 /* DetailsPresenter.swift */; };
+		C0A8BF732CEA7F5A00D29367 /* DetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A8BF6D2CEA7F5A00D29367 /* DetailsRouter.swift */; };
+		C0A8BF742CEA7F5A00D29367 /* DetailsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A8BF6E2CEA7F5A00D29367 /* DetailsModels.swift */; };
+		C0A8BF752CEA7F5A00D29367 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A8BF6F2CEA7F5A00D29367 /* DetailsViewController.swift */; };
+		C0A8BF762CEA7F5A00D29367 /* DetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A8BF702CEA7F5A00D29367 /* DetailsInteractor.swift */; };
+		C0A8BF7E2CEEB23B00D29367 /* MyListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A8BF782CEEB23B00D29367 /* MyListPresenter.swift */; };
+		C0A8BF802CEEB23B00D29367 /* MyListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A8BF7A2CEEB23B00D29367 /* MyListRouter.swift */; };
+		C0A8BF812CEEB23B00D29367 /* MyListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A8BF7B2CEEB23B00D29367 /* MyListModels.swift */; };
+		C0A8BF822CEEB23B00D29367 /* MyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A8BF7C2CEEB23B00D29367 /* MyListViewController.swift */; };
+		C0A8BF832CEEB23B00D29367 /* MyListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A8BF7D2CEEB23B00D29367 /* MyListInteractor.swift */; };
+		C0A8BF862CEEC35500D29367 /* GloboColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A8BF852CEEC35500D29367 /* GloboColors.swift */; };
+		C0A8BF8A2CEED8E500D29367 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A8BF892CEED8E500D29367 /* APIService.swift */; };
+		C0A8BF8F2CEEE4E200D29367 /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A8BF8E2CEEE4E200D29367 /* APIProvider.swift */; };
+		C0A8BF912CEEE53900D29367 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A8BF902CEEE53900D29367 /* Decoder.swift */; };
+		C0AFBEC12CF5142400BBA05A /* MyListKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AFBEC02CF5142400BBA05A /* MyListKeys.swift */; };
+		C0AFBEC32CF51A3800BBA05A /* WatchlistFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AFBEC22CF51A3800BBA05A /* WatchlistFactory.swift */; };
+		C0CD0E9C2CF24C1B00A89E88 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CD0E9B2CF24C1B00A89E88 /* HomeTableViewCell.swift */; };
+		C0CD0E9E2CF24DB100A89E88 /* HomeCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CD0E9D2CF24DB100A89E88 /* HomeCarouselView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0A8BF412CEA760300D29367 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0A8BF222CEA760000D29367 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0A8BF292CEA760000D29367;
+			remoteInfo = globoplay;
+		};
+		C0A8BF4B2CEA760300D29367 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0A8BF222CEA760000D29367 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0A8BF292CEA760000D29367;
+			remoteInfo = globoplay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C027E46E2CF3E6C8007C8481 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		C027E4722CF41453007C8481 /* DetailsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsKeys.swift; sourceTree = "<group>"; };
+		C027E4762CF41794007C8481 /* HomeKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeKeys.swift; sourceTree = "<group>"; };
+		C027E4792CF44D36007C8481 /* PlayerVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerVideo.swift; sourceTree = "<group>"; };
+		C027E47B2CF4C85A007C8481 /* MyListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListCell.swift; sourceTree = "<group>"; };
+		C0A8BF2A2CEA760000D29367 /* globoplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = globoplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0A8BF2D2CEA760000D29367 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C0A8BF2F2CEA760000D29367 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C0A8BF312CEA760000D29367 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		C0A8BF342CEA760000D29367 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C0A8BF362CEA760200D29367 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0A8BF392CEA760200D29367 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C0A8BF3B2CEA760200D29367 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0A8BF402CEA760300D29367 /* globoplayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = globoplayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0A8BF442CEA760300D29367 /* globoplayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = globoplayTests.swift; sourceTree = "<group>"; };
+		C0A8BF4A2CEA760300D29367 /* globoplayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = globoplayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0A8BF4E2CEA760300D29367 /* globoplayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = globoplayUITests.swift; sourceTree = "<group>"; };
+		C0A8BF502CEA760300D29367 /* globoplayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = globoplayUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C0A8BF5F2CEA7F1E00D29367 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		C0A8BF612CEA7F1E00D29367 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		C0A8BF622CEA7F1E00D29367 /* HomeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModels.swift; sourceTree = "<group>"; };
+		C0A8BF632CEA7F1E00D29367 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C0A8BF642CEA7F1E00D29367 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		C0A8BF6B2CEA7F5A00D29367 /* DetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPresenter.swift; sourceTree = "<group>"; };
+		C0A8BF6D2CEA7F5A00D29367 /* DetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsRouter.swift; sourceTree = "<group>"; };
+		C0A8BF6E2CEA7F5A00D29367 /* DetailsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModels.swift; sourceTree = "<group>"; };
+		C0A8BF6F2CEA7F5A00D29367 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		C0A8BF702CEA7F5A00D29367 /* DetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsInteractor.swift; sourceTree = "<group>"; };
+		C0A8BF782CEEB23B00D29367 /* MyListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListPresenter.swift; sourceTree = "<group>"; };
+		C0A8BF7A2CEEB23B00D29367 /* MyListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListRouter.swift; sourceTree = "<group>"; };
+		C0A8BF7B2CEEB23B00D29367 /* MyListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListModels.swift; sourceTree = "<group>"; };
+		C0A8BF7C2CEEB23B00D29367 /* MyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListViewController.swift; sourceTree = "<group>"; };
+		C0A8BF7D2CEEB23B00D29367 /* MyListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListInteractor.swift; sourceTree = "<group>"; };
+		C0A8BF852CEEC35500D29367 /* GloboColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GloboColors.swift; sourceTree = "<group>"; };
+		C0A8BF892CEED8E500D29367 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		C0A8BF8E2CEEE4E200D29367 /* APIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProvider.swift; sourceTree = "<group>"; };
+		C0A8BF902CEEE53900D29367 /* Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
+		C0AFBEC02CF5142400BBA05A /* MyListKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListKeys.swift; sourceTree = "<group>"; };
+		C0AFBEC22CF51A3800BBA05A /* WatchlistFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistFactory.swift; sourceTree = "<group>"; };
+		C0CD0E9B2CF24C1B00A89E88 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		C0CD0E9D2CF24DB100A89E88 /* HomeCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCarouselView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0A8BF272CEA760000D29367 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0A8BF3D2CEA760300D29367 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0A8BF472CEA760300D29367 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C027E4702CF41435007C8481 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C027E4722CF41453007C8481 /* DetailsKeys.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C027E4752CF41770007C8481 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C027E4762CF41794007C8481 /* HomeKeys.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C027E4782CF44D10007C8481 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				C027E4792CF44D36007C8481 /* PlayerVideo.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		C0A8BF212CEA760000D29367 = {
+			isa = PBXGroup;
+			children = (
+				C0A8BF2C2CEA760000D29367 /* globoplay */,
+				C0A8BF432CEA760300D29367 /* globoplayTests */,
+				C0A8BF4D2CEA760300D29367 /* globoplayUITests */,
+				C0A8BF2B2CEA760000D29367 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C0A8BF2B2CEA760000D29367 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0A8BF2A2CEA760000D29367 /* globoplay.app */,
+				C0A8BF402CEA760300D29367 /* globoplayTests.xctest */,
+				C0A8BF4A2CEA760300D29367 /* globoplayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0A8BF2C2CEA760000D29367 /* globoplay */ = {
+			isa = PBXGroup;
+			children = (
+				C0A8BF842CEEC30A00D29367 /* Utils */,
+				C0A8BF772CEEAD1400D29367 /* MyList */,
+				C0A8BF5E2CEA7EFC00D29367 /* Details */,
+				C0A8BF5D2CEA7EEA00D29367 /* Home */,
+				C0A8BF2D2CEA760000D29367 /* AppDelegate.swift */,
+				C0A8BF2F2CEA760000D29367 /* SceneDelegate.swift */,
+				C0A8BF312CEA760000D29367 /* TabBarController.swift */,
+				C0A8BF332CEA760000D29367 /* Main.storyboard */,
+				C0A8BF362CEA760200D29367 /* Assets.xcassets */,
+				C0A8BF382CEA760200D29367 /* LaunchScreen.storyboard */,
+				C0A8BF3B2CEA760200D29367 /* Info.plist */,
+			);
+			path = globoplay;
+			sourceTree = "<group>";
+		};
+		C0A8BF432CEA760300D29367 /* globoplayTests */ = {
+			isa = PBXGroup;
+			children = (
+				C0A8BF442CEA760300D29367 /* globoplayTests.swift */,
+			);
+			path = globoplayTests;
+			sourceTree = "<group>";
+		};
+		C0A8BF4D2CEA760300D29367 /* globoplayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C0A8BF4E2CEA760300D29367 /* globoplayUITests.swift */,
+				C0A8BF502CEA760300D29367 /* globoplayUITestsLaunchTests.swift */,
+			);
+			path = globoplayUITests;
+			sourceTree = "<group>";
+		};
+		C0A8BF5D2CEA7EEA00D29367 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C027E4752CF41770007C8481 /* Resources */,
+				C0CD0E9A2CF24C0000A89E88 /* Cell */,
+				C0A8BF5F2CEA7F1E00D29367 /* HomePresenter.swift */,
+				C0A8BF612CEA7F1E00D29367 /* HomeRouter.swift */,
+				C0A8BF622CEA7F1E00D29367 /* HomeModels.swift */,
+				C0A8BF632CEA7F1E00D29367 /* HomeViewController.swift */,
+				C0A8BF642CEA7F1E00D29367 /* HomeInteractor.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C0A8BF5E2CEA7EFC00D29367 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				C027E4782CF44D10007C8481 /* Player */,
+				C027E4702CF41435007C8481 /* Resources */,
+				C0A8BF6B2CEA7F5A00D29367 /* DetailsPresenter.swift */,
+				C0A8BF6D2CEA7F5A00D29367 /* DetailsRouter.swift */,
+				C0A8BF6E2CEA7F5A00D29367 /* DetailsModels.swift */,
+				C0A8BF6F2CEA7F5A00D29367 /* DetailsViewController.swift */,
+				C0A8BF702CEA7F5A00D29367 /* DetailsInteractor.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		C0A8BF772CEEAD1400D29367 /* MyList */ = {
+			isa = PBXGroup;
+			children = (
+				C0AFBEC42CF56CFD00BBA05A /* Cell */,
+				C0AFBEBF2CF513F900BBA05A /* Resources */,
+				C0A8BF782CEEB23B00D29367 /* MyListPresenter.swift */,
+				C0A8BF7A2CEEB23B00D29367 /* MyListRouter.swift */,
+				C0A8BF7B2CEEB23B00D29367 /* MyListModels.swift */,
+				C0A8BF7C2CEEB23B00D29367 /* MyListViewController.swift */,
+				C0A8BF7D2CEEB23B00D29367 /* MyListInteractor.swift */,
+			);
+			path = MyList;
+			sourceTree = "<group>";
+		};
+		C0A8BF842CEEC30A00D29367 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C0A8BF8B2CEEDB7B00D29367 /* ServiceInterface */,
+				C0A8BF852CEEC35500D29367 /* GloboColors.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C0A8BF8B2CEEDB7B00D29367 /* ServiceInterface */ = {
+			isa = PBXGroup;
+			children = (
+				C0A8BF892CEED8E500D29367 /* APIService.swift */,
+				C0A8BF8E2CEEE4E200D29367 /* APIProvider.swift */,
+				C0A8BF902CEEE53900D29367 /* Decoder.swift */,
+				C027E46E2CF3E6C8007C8481 /* ImageDownloader.swift */,
+			);
+			path = ServiceInterface;
+			sourceTree = "<group>";
+		};
+		C0AFBEBF2CF513F900BBA05A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C0AFBEC02CF5142400BBA05A /* MyListKeys.swift */,
+				C0AFBEC22CF51A3800BBA05A /* WatchlistFactory.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C0AFBEC42CF56CFD00BBA05A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C027E47B2CF4C85A007C8481 /* MyListCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C0CD0E9A2CF24C0000A89E88 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C0CD0E9B2CF24C1B00A89E88 /* HomeTableViewCell.swift */,
+				C0CD0E9D2CF24DB100A89E88 /* HomeCarouselView.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0A8BF292CEA760000D29367 /* globoplay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0A8BF542CEA760300D29367 /* Build configuration list for PBXNativeTarget "globoplay" */;
+			buildPhases = (
+				C0A8BF262CEA760000D29367 /* Sources */,
+				C0A8BF272CEA760000D29367 /* Frameworks */,
+				C0A8BF282CEA760000D29367 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = globoplay;
+			productName = globoplay;
+			productReference = C0A8BF2A2CEA760000D29367 /* globoplay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C0A8BF3F2CEA760300D29367 /* globoplayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0A8BF572CEA760300D29367 /* Build configuration list for PBXNativeTarget "globoplayTests" */;
+			buildPhases = (
+				C0A8BF3C2CEA760300D29367 /* Sources */,
+				C0A8BF3D2CEA760300D29367 /* Frameworks */,
+				C0A8BF3E2CEA760300D29367 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0A8BF422CEA760300D29367 /* PBXTargetDependency */,
+			);
+			name = globoplayTests;
+			productName = globoplayTests;
+			productReference = C0A8BF402CEA760300D29367 /* globoplayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C0A8BF492CEA760300D29367 /* globoplayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0A8BF5A2CEA760300D29367 /* Build configuration list for PBXNativeTarget "globoplayUITests" */;
+			buildPhases = (
+				C0A8BF462CEA760300D29367 /* Sources */,
+				C0A8BF472CEA760300D29367 /* Frameworks */,
+				C0A8BF482CEA760300D29367 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0A8BF4C2CEA760300D29367 /* PBXTargetDependency */,
+			);
+			name = globoplayUITests;
+			productName = globoplayUITests;
+			productReference = C0A8BF4A2CEA760300D29367 /* globoplayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0A8BF222CEA760000D29367 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					C0A8BF292CEA760000D29367 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					C0A8BF3F2CEA760300D29367 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = C0A8BF292CEA760000D29367;
+					};
+					C0A8BF492CEA760300D29367 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = C0A8BF292CEA760000D29367;
+					};
+				};
+			};
+			buildConfigurationList = C0A8BF252CEA760000D29367 /* Build configuration list for PBXProject "globoplay" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0A8BF212CEA760000D29367;
+			productRefGroup = C0A8BF2B2CEA760000D29367 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0A8BF292CEA760000D29367 /* globoplay */,
+				C0A8BF3F2CEA760300D29367 /* globoplayTests */,
+				C0A8BF492CEA760300D29367 /* globoplayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0A8BF282CEA760000D29367 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0A8BF3A2CEA760200D29367 /* LaunchScreen.storyboard in Resources */,
+				C0A8BF372CEA760200D29367 /* Assets.xcassets in Resources */,
+				C0A8BF352CEA760000D29367 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0A8BF3E2CEA760300D29367 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0A8BF482CEA760300D29367 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0A8BF262CEA760000D29367 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0AFBEC32CF51A3800BBA05A /* WatchlistFactory.swift in Sources */,
+				C0A8BF322CEA760000D29367 /* TabBarController.swift in Sources */,
+				C027E47A2CF44D36007C8481 /* PlayerVideo.swift in Sources */,
+				C027E4742CF41453007C8481 /* DetailsKeys.swift in Sources */,
+				C0A8BF732CEA7F5A00D29367 /* DetailsRouter.swift in Sources */,
+				C027E46F2CF3E6C8007C8481 /* ImageDownloader.swift in Sources */,
+				C027E4772CF41794007C8481 /* HomeKeys.swift in Sources */,
+				C0CD0E9C2CF24C1B00A89E88 /* HomeTableViewCell.swift in Sources */,
+				C0A8BF832CEEB23B00D29367 /* MyListInteractor.swift in Sources */,
+				C0AFBEC12CF5142400BBA05A /* MyListKeys.swift in Sources */,
+				C0A8BF822CEEB23B00D29367 /* MyListViewController.swift in Sources */,
+				C0A8BF672CEA7F1E00D29367 /* HomeRouter.swift in Sources */,
+				C0A8BF2E2CEA760000D29367 /* AppDelegate.swift in Sources */,
+				C0A8BF8F2CEEE4E200D29367 /* APIProvider.swift in Sources */,
+				C0A8BF692CEA7F1E00D29367 /* HomeViewController.swift in Sources */,
+				C027E47C2CF4C85A007C8481 /* MyListCell.swift in Sources */,
+				C0A8BF302CEA760000D29367 /* SceneDelegate.swift in Sources */,
+				C0A8BF912CEEE53900D29367 /* Decoder.swift in Sources */,
+				C0A8BF6A2CEA7F1E00D29367 /* HomeInteractor.swift in Sources */,
+				C0A8BF712CEA7F5A00D29367 /* DetailsPresenter.swift in Sources */,
+				C0A8BF7E2CEEB23B00D29367 /* MyListPresenter.swift in Sources */,
+				C0A8BF762CEA7F5A00D29367 /* DetailsInteractor.swift in Sources */,
+				C0A8BF862CEEC35500D29367 /* GloboColors.swift in Sources */,
+				C0A8BF652CEA7F1E00D29367 /* HomePresenter.swift in Sources */,
+				C0A8BF802CEEB23B00D29367 /* MyListRouter.swift in Sources */,
+				C0A8BF752CEA7F5A00D29367 /* DetailsViewController.swift in Sources */,
+				C0A8BF812CEEB23B00D29367 /* MyListModels.swift in Sources */,
+				C0A8BF742CEA7F5A00D29367 /* DetailsModels.swift in Sources */,
+				C0A8BF8A2CEED8E500D29367 /* APIService.swift in Sources */,
+				C0CD0E9E2CF24DB100A89E88 /* HomeCarouselView.swift in Sources */,
+				C0A8BF682CEA7F1E00D29367 /* HomeModels.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0A8BF3C2CEA760300D29367 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0A8BF452CEA760300D29367 /* globoplayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0A8BF462CEA760300D29367 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0A8BF512CEA760300D29367 /* globoplayUITestsLaunchTests.swift in Sources */,
+				C0A8BF4F2CEA760300D29367 /* globoplayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0A8BF422CEA760300D29367 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0A8BF292CEA760000D29367 /* globoplay */;
+			targetProxy = C0A8BF412CEA760300D29367 /* PBXContainerItemProxy */;
+		};
+		C0A8BF4C2CEA760300D29367 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0A8BF292CEA760000D29367 /* globoplay */;
+			targetProxy = C0A8BF4B2CEA760300D29367 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C0A8BF332CEA760000D29367 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0A8BF342CEA760000D29367 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C0A8BF382CEA760200D29367 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0A8BF392CEA760200D29367 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0A8BF522CEA760300D29367 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C0A8BF532CEA760300D29367 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0A8BF552CEA760300D29367 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = globoplay/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JoaoBonilha.globoplay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C0A8BF562CEA760300D29367 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = globoplay/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JoaoBonilha.globoplay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C0A8BF582CEA760300D29367 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JoaoBonilha.globoplayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/globoplay.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/globoplay";
+			};
+			name = Debug;
+		};
+		C0A8BF592CEA760300D29367 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JoaoBonilha.globoplayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/globoplay.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/globoplay";
+			};
+			name = Release;
+		};
+		C0A8BF5B2CEA760300D29367 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JoaoBonilha.globoplayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = globoplay;
+			};
+			name = Debug;
+		};
+		C0A8BF5C2CEA760300D29367 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JoaoBonilha.globoplayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = globoplay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0A8BF252CEA760000D29367 /* Build configuration list for PBXProject "globoplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0A8BF522CEA760300D29367 /* Debug */,
+				C0A8BF532CEA760300D29367 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0A8BF542CEA760300D29367 /* Build configuration list for PBXNativeTarget "globoplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0A8BF552CEA760300D29367 /* Debug */,
+				C0A8BF562CEA760300D29367 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0A8BF572CEA760300D29367 /* Build configuration list for PBXNativeTarget "globoplayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0A8BF582CEA760300D29367 /* Debug */,
+				C0A8BF592CEA760300D29367 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0A8BF5A2CEA760300D29367 /* Build configuration list for PBXNativeTarget "globoplayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0A8BF5B2CEA760300D29367 /* Debug */,
+				C0A8BF5C2CEA760300D29367 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0A8BF222CEA760000D29367 /* Project object */;
+}

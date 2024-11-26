@@ -1,0 +1,20 @@
+//
+//  Details.strings
+//  globoplay
+//
+//  Created by JOÃO GUILHERME BONILHA VIANA on 24/11/24.
+//
+
+"watchButton" = "Assista:";
+"myListButton" = "Minha Lista:";
+"watchAlso" = "Assista Também:";
+"technicalSheet" = "Ficha Técnica:";
+"title" = "Título Original:";
+"gender" = "Gênero:";
+"Episodes" = "Número de Episódios:";
+"year" = "Ano de produção:";
+"country" = "País:";
+"director" = "Direção:";
+"cast" = "Elenco:";
+"available" = "Disponível até:";
+
