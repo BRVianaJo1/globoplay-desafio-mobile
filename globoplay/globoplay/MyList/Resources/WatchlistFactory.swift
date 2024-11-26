@@ -14,7 +14,6 @@ class WatchlistFactory {
     
     private init() {}
     
-  
     func updateWatchlist(with movieIDs: [Int]) {
         self.watchlistMovies = movieIDs
     }

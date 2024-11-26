@@ -18,15 +18,12 @@ class ViewController: UITabBarController {
         self.tabBar.itemPositioning = .centered
         self.tabBar.itemSpacing = 0
 
-        // Instanciar os ViewControllers
         let homeViewController = HomeViewController()
         let myListViewController = MyListViewController()
 
-        // Envolver os ViewControllers em UINavigationControllers
         let homeNavigationController = UINavigationController(rootViewController: homeViewController)
         let myListNavigationController = UINavigationController(rootViewController: myListViewController)
 
-        // Atribuir itens do tabBar
         homeNavigationController.tabBarItem = UITabBarItem(
             title: HomeKeys.Localized.homeButtonTitle.rawValue,
             image: UIImage(named: HomeKeys.Localized.homeImage.rawValue),
@@ -38,7 +35,6 @@ class ViewController: UITabBarController {
             selectedImage: UIImage(named: HomeKeys.Localized.myListImage.rawValue)
         )
 
-        // Atribuir o array de UINavigationControllers ao UITabBarController
         self.viewControllers = [homeNavigationController, myListNavigationController]
     }
 }

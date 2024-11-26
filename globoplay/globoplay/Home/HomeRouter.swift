@@ -24,10 +24,4 @@ final class HomeRouter: NSObject, HomeRoutingLogic {
         nextViewController.hidesBottomBarWhenPushed = true
         viewController?.navigationController?.pushViewController(nextViewController, animated: true)
     }
-    
-    // MARK: - Passing data
-    
-//    func passDataToSomewhere(source: HomeDataStore, destination: inout DetailsDataStore) {
-//        destination.name = source.name
-//    }
 }
